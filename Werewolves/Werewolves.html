@@ -1,0 +1,117 @@
+<!--
+	Werewolves.html
+	
+	Programm for the calculation of probabilities in a simplified Werewolf-Game,
+	where in each turn first the werewolves kill a villager
+	and second one person is randomly selected from the remaining group of players,
+	including villagers and werewolves, to be sacrificed as suspected werewolf.
+	Werwolves win when the number of remaining villagers is reduced to the number of remainung werewolves or below.
+	
+	(c) 2014, Prof. Jirka Dell'Oro-Friedl, Hochschule Furtwangen University
+-->
+<script>
+	window.addEventListener("load", init);
+	var canvas;
+	var margin = 10;
+	var storedPw = new Array();
+
+	function init(_event) {
+		console.log("init");
+		document.body.innerHTML = 'Werewolves: <input type="number" id="wolves" min="1" max="10" value="1" style="width:60px;">';
+		document.body.innerHTML += ' | Villagers: <input type="number" id="villagers" min="1" max="40" value="3" style="width:60px;">';
+		document.body.innerHTML += ' | <button type="button" id="calc">Calculate</button>';
+		document.body.innerHTML += '<div><canvas id="canvas" width="800" height="200"><canvas></div>	';
+		document.body.innerHTML += '<fieldset id="results"></fieldset>';
+		var b = document.getElementById("calc");
+		b.addEventListener("click", clickButton);
+		canvas = document.getElementById("canvas");
+		canvas.addEventListener("click", clickDiagram);
+		drawDiagram();
+	}
+
+	function clickButton(_event) {
+		var w = parseInt(document.getElementById("wolves").value);
+		var v = parseInt(document.getElementById("villagers").value);
+		calculate(w, v);
+	}
+
+	function clickDiagram(_event) {
+		var w = (canvas.width - 2 * margin) / 40;
+		var h = (canvas.height - 2 * margin) / 10;
+
+		var x = _event.clientX - canvas.getBoundingClientRect().left;
+		var y = _event.clientY - canvas.getBoundingClientRect().top;
+		x = Math.ceil((x - margin) / w);
+		y = Math.ceil((canvas.height - y - margin) / h);
+		console.log(x + "|" + y);
+		if (x > 0 && y > 0)
+			calculate(y, x);
+	}
+
+	function drawDiagram() {
+		var ctx = canvas.getContext("2d");
+
+		ctx.beginPath();
+		ctx.moveTo(0, canvas.height - margin);
+		ctx.lineTo(canvas.width, canvas.height - margin);
+		ctx.moveTo(margin, canvas.height);
+		ctx.lineTo(margin, 0);
+		ctx.stroke();
+
+		var w = (canvas.width - 2 * margin) / 40;
+		var h = (canvas.height - 2 * margin) / 10;
+		for (var wolves = 1; wolves <= 10; wolves++) {
+			ctx.strokeText(wolves, margin - 10, canvas.height - margin + h / 2 - wolves * h);
+		}
+		for (var villagers = 1; villagers <= 40; villagers++) {
+			ctx.strokeText(villagers, margin - w / 1.5 + villagers * w, canvas.height - margin + h / 2);
+		}
+		for (var wolves = 1; wolves <= 10; wolves++) {
+			for (var villagers = 1; villagers <= 40; villagers++) {
+				var Pw = calcPw(wolves, villagers);
+				ctx.fillStyle = rgbString(2 * Pw, 2 - 2 * Pw, 0);
+				ctx.fillRect(margin - w + villagers * w, canvas.height - margin + h - wolves * h, w, -h);
+				//console.log(wolves + ":" + villagers + ":" +Pw);
+			}
+		}
+	}
+
+	function rgbString(_r, _g, _b) {
+		return "rgb(" + Math.floor(_r * 255) + "," + Math.floor(_g * 255) + "," + Math.floor(_b * 255) + ")";
+	}
+
+	function calculate(_w, _v) {
+		var r = document.getElementById("results");
+
+		var Pw = calcPw(_w, _v, 1);
+
+		r.innerHTML += 'Werewolves: ' + _w + ' | Villagers: ' + _v + ' | Chance for Werewolves: ' + Pw + '<br/>';
+		console.log(Pw);
+	}
+
+	function calcPw(_w, _v, _level) {
+		if (storedPw[_w]) {
+			if (storedPw[_w][_v]) {
+				return storedPw[_w][_v];
+			}
+		} else {
+			storedPw[_w] = new Array;
+		}
+		if (_w == 0)
+			return 0;
+		if (_w >= _v)
+			return 1;
+
+		_level++;
+		var P1 = calcPw(_w - 1, _v - 1, _level);
+		var P2 = calcPw(_w, _v - 2, _level);
+		var Pw = (_w * P1 + (_v - 1) * P2) / (_w + _v - 1);
+		/*
+		 var s1 = "Pw(" + (_w - 1) + "," + (_v - 1) + ") = " + P1.toFixed(3);
+		 var s2 = "Pw(" + (_w) + "," + (_v - 2) + ") = " + P2.toFixed(3);
+		 console.log((_level - 1) + " -> Pw(" + _w + "," + _v + ") = ( w = " + _w + " * " + s1 + " + (v-1) = " + (_v - 1) + " * " + s2 + " ) / " + (_w + _v - 1) + "    = " + Pw.toFixed(3));
+		 */
+		storedPw[_w][_v] = Pw;
+		return Pw;
+	}
+</script>

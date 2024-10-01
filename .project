@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>GameDesign</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.aptana.ide.core.unifiedBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.aptana.projects.webnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Setup.ts</name>
+			<type>1</type>
+			<location>C:/Users/Jirka/Documents/HFU/TypescriptWorkspace/Examples/Setup.ts</location>
+		</link>
+		<link>
+			<name>tslint.json</name>
+			<type>1</type>
+			<location>C:/Users/Jirka/Documents/HFU/TypescriptWorkspace/Examples/tslint.json</location>
+		</link>
+	</linkedResources>
+	<variableList>
+		<variable>
+			<name>workspace</name>
+			<value>$%7Bworkspace%7D</value>
+		</variable>
+	</variableList>
+</projectDescription>

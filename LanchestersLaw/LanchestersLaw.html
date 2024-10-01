@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas</title>
+		<style>
+			#menu {
+				float: left;
+				background-color: lightgrey;
+				height: 600px;
+				padding: 3px
+			}
+			#red {
+				text-align: right;
+				background-color: red;
+			}
+			#blue {
+				text-align: right;
+				background-color: lightblue;
+			}
+			[type="number"] {
+				width: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="../Setup.js"></script>
+		<script src="../Vector2D/Vector2D.js"></script>
+		<script src="Enums.js"></script>
+		<script src="Unit.js"></script>
+		<script src="LanchestersLaw.js"></script>
+		<script src="Menu.js"></script>
+
+		<div id="menu">
+			<h2>Lanchesters Law</h2>
+			<form>
+				<fieldset>
+					<legend>
+						Numbers
+					</legend>
+					<div id="red">
+						Units
+						<input id="nRed" type="number" min="1" max="100" value="10" step="1"/>
+						Power
+						<input id="powerRed" type="number" min="0" max="2" value="1" step="0.1"/>
+					</div>
+					<div id="blue">
+						Units
+						<input id="nBlue" type="number" min="1" max="100" value="10" step="1"/>
+						Power
+						<input id="powerBlue"  type="number" min="0" max="2" value="1" step="0.1"/>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>
+						Arrangement
+					</legend>
+					<input type="radio" name="arrangement" value="Parallel" id="Parallel" checked/>
+					<label for="Parallel">Parallel </label>
+					<br />
+					<input type="radio" name="arrangement" value="T-Pose" id="T-Pose"/>
+					<label for="T-Pose">T-Pose </label>
+					<br />
+					<input type="radio" name="arrangement" value="Circular" id="Circular"/>
+					<label for="Circular">Circular </label>
+					<br />
+					<input type="radio" name="arrangement" value="Random" id="Random"/>
+					<label for="Random">Random </label>
+				</fieldset>
+			</form>
+			<button id="go">
+				GO!
+			</button>
+			<button id="reset">
+				Reset
+			</button>
+			<fieldset>
+				<legend>
+					Result
+				</legend>
+				<textarea rows="10" cols="22" id="result">Results</textarea>
+			</fieldset>
+			<p>
+				&copy; Jirka Dell'Oro-Friedl 2014
+			</p>
+		</div>
+	</body>
+</html>
