@@ -3,28 +3,35 @@ let active: number = 0
 let potential: number = 0
 let strategy: Function[] = [strategy10, strategy10]
 
-strategy[1] = Reflect.get(window, "HundoDice").strategy
+window.addEventListener("load", start)
 
-do {
-  let go: boolean = strategy[active](score, active, potential)
-  if (go) {
-    let roll: number = 1 + Math.floor(Math.random() * 6)
-    if (roll > 1)
-      potential += roll
-    else
+async function start(): Promise<void> {
+  await loadScript("https://aspepex.github.io/HundoDice/strategy.js");
+
+  strategy[1] = Reflect.get(window, "HundoDice").strategy
+
+  do {
+    let go: boolean = strategy[active](score, active, potential)
+    if (go) {
+      let roll: number = 1 + Math.floor(Math.random() * 6)
+      if (roll > 1)
+        potential += roll
+      else
+        togglePlayer()
+    } else {
+      score[active] += potential
+      if (active == 1 && (score[active] >= 100 || score[1 - active] >= 100))
+        break
       togglePlayer()
-  } else {
-    score[active] += potential
-    if (active == 1 && (score[active] >= 100 || score[1 - active] >= 100))
-      break
-    togglePlayer()
-  }
-} while (true)
+    }
+  } while (true)
 
-togglePlayer()
-if (score[active] < score[1 - active])
   togglePlayer()
-console.log(`Player ${active} won with ${score[active]} points`)
+  if (score[active] < score[1 - active])
+    togglePlayer()
+  console.log(`Player ${active} won with ${score[active]} points`)
+}
+
 
 function strategy10(_score: number[], _active: number, _potential: number): boolean {
   let go: boolean = _potential < 50
@@ -35,4 +42,20 @@ function togglePlayer() {
   console.log(score[0], score[1], potential)
   potential = 0
   active = 1 - active
+}
+
+async function loadScript(_url: RequestInfo): Promise<void> {
+  let script: HTMLScriptElement = document.createElement("script");
+  script.type = "text/javascript";
+  script.async = false;
+  let head: HTMLHeadElement = document.head;
+  head.appendChild(script);
+
+  return new Promise((_resolve, _reject) => {
+    script.addEventListener("load", () => _resolve());
+    script.addEventListener("error", () => {
+      _reject();
+    });
+    script.src = _url.toString();
+  });
 }
