@@ -1,10 +1,10 @@
-import { Import } from "../Import/Import.js"
+import { Agent } from "../Import/Import.js"
 
 let score: number[] = [0, 0]
 let active: number = 0
 let potential: number = 0
 let strategy: Function[] = [strategy10, strategy10]
-let import0: Import = new Import();
+let import0: Agent = new Agent();
 
 window.addEventListener("load", start)
 
@@ -14,15 +14,11 @@ async function start(): Promise<void> {
   button.innerText = "Start"
   button.addEventListener("click", simulate);
   document.body.appendChild(button);
+
+  await Agent.createDialog(2, ["strategy"])
 }
 
 async function simulate(): Promise<void> {
-  if (!await import0.importFunctions(["strategy"]))
-    return;
-
-  strategy[1] = <Function>import0.strategy;
-  console.log(import0)
-
   do {
     let go: boolean = strategy[active](score, active, potential)
     if (go) {

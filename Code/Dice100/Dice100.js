@@ -1,9 +1,9 @@
-import { Import } from "../Import/Import.js";
+import { Agent } from "../Import/Import.js";
 let score = [0, 0];
 let active = 0;
 let potential = 0;
 let strategy = [strategy10, strategy10];
-let import0 = new Import();
+let import0 = new Agent();
 window.addEventListener("load", start);
 async function start() {
     document.body.appendChild(import0.createForm());
@@ -11,12 +11,9 @@ async function start() {
     button.innerText = "Start";
     button.addEventListener("click", simulate);
     document.body.appendChild(button);
+    await Agent.createDialog(2, ["strategy"]);
 }
 async function simulate() {
-    if (!await import0.importFunctions(["strategy"]))
-        return;
-    strategy[1] = import0.strategy;
-    console.log(import0);
     do {
         let go = strategy[active](score, active, potential);
         if (go) {
