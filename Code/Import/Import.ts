@@ -1,43 +1,36 @@
 export class Import {
-  [key: string]: Function | HTMLFormElement;
-  public form: HTMLFormElement;
+  [key: string]: Function
+  static urls: string[] = JSON.parse(<string>localStorage.getItem("urls")) || []
+  #form: HTMLFormElement = document.createElement("form")
 
-  public constructor() {
-    this.form = document.createElement("form")
-    this.form.innerHTML = `url <input name="url"/> namespace <input name="namespace"/>`
+  public createForm(_label: string = "URL"): HTMLFormElement {
+    // this.#form.innerHTML = `${_label} <input name="url" size="50"/>`
+    this.#form.innerHTML = `${_label} <input list="urls" name="url" size="50" /><datalist id="urls"/>`
+    let list: HTMLDataListElement = this.#form.querySelector("datalist")!;
+    for (let url of Import.urls)
+      list.innerHTML += `<option value=${url}></option>`
+
+    return this.#form
   }
 
-  public async import(_functions: string[]): Promise<boolean> {
+  public async importFunctions(_functions: string[]): Promise<boolean> {
+    const formdata: FormData = new FormData(this.#form);
+    const url: string = <string>formdata.get("url")
     try {
-      const formdata: FormData = new FormData(this.form);
-      const url: RequestInfo = <RequestInfo>formdata.get("url")
-      if (url == "")
-        throw ("No url given")
-
-      await this.loadScript(url);
-
-      const namespace: string = <string>formdata.get("namespace")
+      let module = await import(url)
+      let namespace = Reflect.ownKeys(module)[0]
       for (const f of _functions)
-        this[f] = Reflect.get(window, namespace)[f]
+        this[f] = Reflect.get(module, namespace)[f]
     } catch (_e) {
       console.error(_e)
       return false
     }
+
+    if (Import.urls && Import.urls.indexOf(url) > -1)
+      return true
+
+    Import.urls.unshift(url)
+    localStorage.setItem("urls", JSON.stringify(Import.urls))
     return true
-  }
-
-
-  private async loadScript(_url: RequestInfo): Promise<void> {
-    let script: HTMLScriptElement = document.createElement("script");
-    script.type = "text/javascript";
-    script.async = false;
-    let head: HTMLHeadElement = document.head;
-    head.appendChild(script);
-
-    return new Promise((_resolve, _reject) => {
-      script.addEventListener("load", () => _resolve())
-      script.addEventListener("error", () => _reject())
-      script.src = _url.toString();
-    });
   }
 }

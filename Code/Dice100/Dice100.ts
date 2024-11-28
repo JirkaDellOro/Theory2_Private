@@ -1,6 +1,4 @@
 import { Import } from "../Import/Import.js"
-//@ts-expect-error
-import { strategy } from "https://jirkadelloro.github.io/test.js"
 
 let score: number[] = [0, 0]
 let active: number = 0
@@ -11,18 +9,16 @@ let import0: Import = new Import();
 window.addEventListener("load", start)
 
 async function start(): Promise<void> {
-  document.body.appendChild(import0.form);
+  document.body.appendChild(import0.createForm());
   const button: HTMLButtonElement = document.createElement("button")
   button.innerText = "Start"
   button.addEventListener("click", simulate);
   document.body.appendChild(button);
 }
-// await loadScript("https://aspepex.github.io/HundoDice/strategy.js");
-// strategy[1] = Reflect.get(window, "HundoDice").strategy
 
 async function simulate(): Promise<void> {
-  if (!  await import0.import(["strategy"]))
-    return
+  if (!await import0.importFunctions(["strategy"]))
+    return;
 
   strategy[1] = <Function>import0.strategy;
   console.log(import0)
