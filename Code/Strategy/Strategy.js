@@ -1,5 +1,4 @@
-"use strict";
-var Jirka;
+export var Jirka;
 (function (Jirka) {
     function strategy(_score, _active, _potential) {
         return Math.random() < 0.5;

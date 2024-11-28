@@ -1,9 +1,9 @@
-import { ABC } from "../Import/Import.js";
+import { Import } from "../Import/Import.js";
 let score = [0, 0];
 let active = 0;
 let potential = 0;
 let strategy = [strategy10, strategy10];
-let import0 = new ABC.Import();
+let import0 = new Import();
 window.addEventListener("load", start);
 async function start() {
     document.body.appendChild(import0.form);
