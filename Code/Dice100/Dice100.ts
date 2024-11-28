@@ -1,12 +1,12 @@
-import { Import } from "../Import/Import.js"
-//@ts-expect- error
-// import { strategy } from "https://aspepex.github.io/HundoDice/strategy.js"
+import { ABC } from "../Import/Import.js"
+//@ts-expect-error
+import { strategy } from "https://hfugmb24.github.io/Code1/Code/test.js"
 
 let score: number[] = [0, 0]
 let active: number = 0
 let potential: number = 0
 let strategy: Function[] = [strategy10, strategy10]
-let import0: Import = new Import();
+let import0: ABC.Import = new ABC.Import();
 
 window.addEventListener("load", start)
 

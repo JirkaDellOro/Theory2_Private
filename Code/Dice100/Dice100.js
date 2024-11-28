@@ -1,11 +1,9 @@
-import { Import } from "../Import/Import.js";
-//@ts-expect- error
-// import { strategy } from "https://aspepex.github.io/HundoDice/strategy.js"
+import { ABC } from "../Import/Import.js";
 let score = [0, 0];
 let active = 0;
 let potential = 0;
 let strategy = [strategy10, strategy10];
-let import0 = new Import();
+let import0 = new ABC.Import();
 window.addEventListener("load", start);
 async function start() {
     document.body.appendChild(import0.form);
