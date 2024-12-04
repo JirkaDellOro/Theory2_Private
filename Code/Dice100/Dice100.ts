@@ -1,6 +1,3 @@
-let url: string = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js"
-// import { Agent } from url; // = await import(url);
-
 let score: number[] = [0, 0]
 let active: number = 0
 let potential: number = 0
@@ -8,16 +5,20 @@ let strategy: Function[] = [strategy10, strategy10]
 
 window.addEventListener("load", start)
 
+async function getAgents(): Promise<void> {
+  let url: string = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js"
+  let Agent = (await import(url)).default;
+
+  await Agent.createDialog(2, ["strategy"])
+  strategy[0] = Agent.get(0).strategy
+}
+
 async function start(): Promise<void> {
-  let Agent = (await import(url)).Agent;
-  console.log(Agent)
+  await getAgents();
   const button: HTMLButtonElement = document.createElement("button")
   button.innerText = "Start"
   button.addEventListener("click", simulate);
   document.body.appendChild(button);
-
-  await Agent.createDialog(2, ["strategy"])
-  strategy[0] = Agent.get(0).strategy
 }
 
 async function simulate(): Promise<void> {

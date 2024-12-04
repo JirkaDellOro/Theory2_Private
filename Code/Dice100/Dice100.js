@@ -1,20 +1,21 @@
 "use strict";
-let url = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js";
-// import { Agent } from url; // = await import(url);
 let score = [0, 0];
 let active = 0;
 let potential = 0;
 let strategy = [strategy10, strategy10];
 window.addEventListener("load", start);
+async function getAgents() {
+    let url = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js";
+    let Agent = (await import(url)).default;
+    await Agent.createDialog(2, ["strategy"]);
+    strategy[0] = Agent.get(0).strategy;
+}
 async function start() {
-    let Agent = (await import(url)).Agent;
-    console.log(Agent);
+    await getAgents();
     const button = document.createElement("button");
     button.innerText = "Start";
     button.addEventListener("click", simulate);
     document.body.appendChild(button);
-    await Agent.createDialog(2, ["strategy"]);
-    strategy[0] = Agent.get(0).strategy;
 }
 async function simulate() {
     do {
