@@ -3,15 +3,14 @@ let score = [0, 0];
 let active = 0;
 let potential = 0;
 let strategy = [strategy10, strategy10];
-let import0 = new Agent();
 window.addEventListener("load", start);
 async function start() {
-    document.body.appendChild(import0.createForm());
     const button = document.createElement("button");
     button.innerText = "Start";
     button.addEventListener("click", simulate);
     document.body.appendChild(button);
     await Agent.createDialog(2, ["strategy"]);
+    strategy[0] = Agent.get(0).strategy;
 }
 async function simulate() {
     do {
