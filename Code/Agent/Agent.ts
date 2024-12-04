@@ -11,7 +11,7 @@
  * @author Jirka Dell'Oro-Friedl | Hochschule Furtwangen University | 2024
  */
 
-export class Agent {
+export default class Agent {
   [key: string]: Function
 
   static #urls: string[] = JSON.parse(<string>localStorage.getItem("urls")) || []

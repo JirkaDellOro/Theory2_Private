@@ -10,7 +10,7 @@
  * ```
  * @author Jirka Dell'Oro-Friedl | Hochschule Furtwangen University | 2024
  */
-export class Agent {
+export default class Agent {
     static #urls = JSON.parse(localStorage.getItem("urls")) || [];
     static #agents = [];
     #form = document.createElement("form");

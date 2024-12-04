@@ -1,4 +1,5 @@
-import { Agent } from "../Agent/Agent.js"
+let url: string = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js"
+// import { Agent } from url; // = await import(url);
 
 let score: number[] = [0, 0]
 let active: number = 0
@@ -8,6 +9,8 @@ let strategy: Function[] = [strategy10, strategy10]
 window.addEventListener("load", start)
 
 async function start(): Promise<void> {
+  let Agent = (await import(url)).Agent;
+  console.log(Agent)
   const button: HTMLButtonElement = document.createElement("button")
   button.innerText = "Start"
   button.addEventListener("click", simulate);
