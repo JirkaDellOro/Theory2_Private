@@ -1,4 +1,4 @@
-import { Agent } from "../Import/Import.js"
+import { Agent } from "../Agent/Agent.js"
 
 let score: number[] = [0, 0]
 let active: number = 0

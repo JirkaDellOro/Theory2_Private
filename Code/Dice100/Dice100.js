@@ -1,4 +1,4 @@
-import { Agent } from "../Import/Import.js";
+import { Agent } from "../Agent/Agent.js";
 let score = [0, 0];
 let active = 0;
 let potential = 0;
