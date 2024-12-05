@@ -5,6 +5,7 @@ let potential = 0;
 let strategy = [strategy10, strategy10];
 window.addEventListener("load", start);
 async function getAgents() {
+    // let url: string = "../Agent.js"
     let url = "https://jirkadelloro.github.io/Agent/Agent.js";
     let Agent = (await import(url)).default;
     await Agent.createDialog(2, ["strategy"]);

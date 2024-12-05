@@ -6,6 +6,7 @@ let strategy: Function[] = [strategy10, strategy10]
 window.addEventListener("load", start)
 
 async function getAgents(): Promise<void> {
+  // let url: string = "../Agent.js"
   let url: string = "https://jirkadelloro.github.io/Agent/Agent.js"
   let Agent = (await import(url)).default;
 
