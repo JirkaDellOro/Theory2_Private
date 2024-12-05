@@ -6,8 +6,7 @@ let strategy: Function[] = [strategy10, strategy10]
 window.addEventListener("load", start)
 
 async function getAgents(): Promise<void> {
-  // let url: string = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js"
-  let url: string = "../Agent/Agent.js"
+  let url: string = "https://jirkadelloro.github.io/Agent/Agent.js"
   let Agent = (await import(url)).default;
 
   await Agent.createDialog(2, ["strategy"])

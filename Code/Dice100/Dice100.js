@@ -5,8 +5,7 @@ let potential = 0;
 let strategy = [strategy10, strategy10];
 window.addEventListener("load", start);
 async function getAgents() {
-    // let url: string = "https://jirkadelloro.github.io/Theory2_Private/Code/Agent/Agent.js"
-    let url = "../Agent/Agent.js";
+    let url = "https://jirkadelloro.github.io/Agent/Agent.js";
     let Agent = (await import(url)).default;
     await Agent.createDialog(2, ["strategy"]);
     strategy[0] = Agent.get(0).strategy;
