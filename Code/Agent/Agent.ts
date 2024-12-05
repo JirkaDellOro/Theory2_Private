@@ -17,12 +17,35 @@ export default class Agent {
   static #urls: string[] = JSON.parse(<string>localStorage.getItem("urls")) || []
   static #agents: Agent[] = [];
   #form: HTMLFormElement = document.createElement("form")
+  #url: string = ""
 
   /**
    * Return an agent of the list
    */
   public static get(_i: number): Agent {
     return Agent.#agents[_i];
+  }
+
+  /**
+   * Import the agent functions from a URL
+   * @param _url The URL to load from
+   * @param _functions The functions to look for
+   * @returns true if load was successful
+   */
+  public async import(_url: string, _functions: string[]): Promise<boolean> {
+    try {
+      let module = await import(_url)
+      let namespace = Reflect.ownKeys(module)[0]
+      for (const f of _functions)
+        this[f] = Reflect.get(module, namespace)[f]
+    } catch (_e) {
+      console.error(_e)
+      alert(_e + "\n\nSee developer console for more details")
+      return false
+    }
+
+    this.#url = _url;
+    return true
   }
 
   /**
@@ -35,24 +58,42 @@ export default class Agent {
    */
   public static async createDialog(_agents: number, _functions: string[], _labels: string[] = []): Promise<void> {
     const dialog: HTMLDialogElement = document.createElement("dialog")
+    dialog.innerHTML = "<h1>Import agents</h1>Select or type URL for each agent to load. Agents need to provide the following functions:"
+    const list: HTMLUListElement = document.createElement("ul")
+    for (let f of _functions)
+      list.innerHTML += `<li>${f}</li>`
+    dialog.appendChild(list)
+
     document.body.appendChild(dialog)
     dialog.showModal()
-    for (let player: number = 0; player < _agents; player++) {
-      let agent: Agent = new Agent();
-      dialog.appendChild(agent.createForm())
+    for (let i: number = 0; i < _agents; i++) {
+      let agent: Agent = new Agent()
+      dialog.appendChild(agent.createForm(Agent.#urls[i]))
       Agent.#agents.push(agent)
     }
     const button: HTMLButtonElement = document.createElement("button")
     dialog.appendChild(button)
     button.innerText = "Import"
+
     let promise: Promise<void> = new Promise(_resolve =>
       button.addEventListener("click", async () => {
         let promises: Promise<boolean>[] = [];
-        for (let agent of Agent.#agents)
-          promises.push(agent.import(_functions))
+        for (let agent of Agent.#agents) {
+          const formdata: FormData = new FormData(agent.#form);
+          const url: string = <string>formdata.get("url")
+          promises.push(agent.import(url, _functions))
+        }
         await Promise.all(promises).then((_b) => {
           if (_b.indexOf(false) == -1) {
             dialog.close()
+
+            let topUrls: string[] = []
+            for (let agent of Agent.#agents)
+              topUrls.push(agent.#url)
+            Agent.#urls = Agent.#urls.filter((_url: string) => topUrls.indexOf(_url) == -1)
+            Agent.#urls = topUrls.concat(Agent.#urls)
+            localStorage.setItem("urls", JSON.stringify(Agent.#urls))
+
             _resolve()
           }
         })
@@ -61,33 +102,14 @@ export default class Agent {
     await promise
   }
 
-  private createForm(_label: string = "URL"): HTMLFormElement {
+  private createForm(_default: string = "", _label: string = "URL"): HTMLFormElement {
     this.#form.innerHTML = `${_label} <input list="urls" name="url" size="50" /><datalist id="urls"/>`
-    let list: HTMLDataListElement = this.#form.querySelector("datalist")!;
+    let input = this.#form.querySelector("input")!
+    input.value = _default
+    input.addEventListener("pointerdown", (_event: Event) => (<HTMLInputElement>_event.target).value = "")
+    let list: HTMLDataListElement = this.#form.querySelector("datalist")!
     for (let url of Agent.#urls)
       list.innerHTML += `<option value=${url}></option>`
-
     return this.#form
-  }
-
-  private async import(_functions: string[]): Promise<boolean> {
-    const formdata: FormData = new FormData(this.#form);
-    const url: string = <string>formdata.get("url")
-    try {
-      let module = await import(url)
-      let namespace = Reflect.ownKeys(module)[0]
-      for (const f of _functions)
-        this[f] = Reflect.get(module, namespace)[f]
-    } catch (_e) {
-      console.error(_e)
-      return false
-    }
-
-    if (Agent.#urls && Agent.#urls.indexOf(url) > -1)
-      return true
-
-    Agent.#urls.unshift(url)
-    localStorage.setItem("urls", JSON.stringify(Agent.#urls))
-    return true
   }
 }
