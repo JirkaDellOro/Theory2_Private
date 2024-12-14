@@ -2458,7 +2458,7 @@
 </node>
 <node CREATED="1440265779494" ID="ID_177681655" MODIFIED="1440334797873" TEXT="Create and maintain Game Design Document"/>
 </node>
-<node CREATED="1394020440514" FOLDED="true" ID="ID_1837627524" MODIFIED="1734174535685" TEXT="Links">
+<node CREATED="1394020440514" FOLDED="true" ID="ID_1837627524" MODIFIED="1734175622494" TEXT="Links">
 <node CREATED="1394020461882" ID="ID_321856432" LINK="http://www.paidia.de/" MODIFIED="1394020468625" TEXT="Paidia.de"/>
 <node CREATED="1394025408841" ID="ID_1653185102" LINK="http://de.slideshare.net/dings/paideia-as-paidia-from-gamebased-learning-to-a-life-wellplayed" MODIFIED="1394025420896" TEXT="GameBasedLearning / Gamification"/>
 <node CREATED="1394196138636" ID="ID_1427051996" LINK="http://techland.time.com/2013/12/19/the-history-of-video-game-consoles/" MODIFIED="1394196147151" TEXT="History of Consoles"/>
@@ -2466,6 +2466,7 @@
 <node CREATED="1394290800068" ID="ID_1626464163" LINK="https://www.museumofplay.org/video-game-history-timeline/" MODIFIED="1734174192676" TEXT="Timeline ICHEG/Strong"/>
 <node CREATED="1417256135661" ID="ID_695184125" LINK="https://archive.org/details/historicalsoftware" MODIFIED="1417256231953" TEXT="Internet Archive (Library of Congress)"/>
 <node CREATED="1432107170834" ID="ID_1672663560" LINK="http://www.finitearts.com/Pages/400page.html" MODIFIED="1432107266152" TEXT="400 Project"/>
+<node CREATED="1734175617827" LINK="https://8bit-museum.de/" MODIFIED="1734175617827" TEXT="https://8bit-museum.de/"/>
 </node>
 </node>
 </node>
