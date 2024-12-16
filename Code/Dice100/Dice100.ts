@@ -23,6 +23,10 @@ async function start(): Promise<void> {
 }
 
 async function simulate(): Promise<void> {
+  score = [0, 0]
+  active = 0
+  potential = 0
+  
   do {
     let go: boolean = strategy[active](score, active, potential)
     if (go) {

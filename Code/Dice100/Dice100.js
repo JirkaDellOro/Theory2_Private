@@ -19,6 +19,9 @@ async function start() {
     document.body.appendChild(button);
 }
 async function simulate() {
+    score = [0, 0];
+    active = 0;
+    potential = 0;
     do {
         let go = strategy[active](score, active, potential);
         if (go) {
