@@ -1,8 +1,8 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1353339195546" ID="ID_1100804556" MODIFIED="1734301136846" TEXT="Game Design">
+<node CREATED="1353339195546" ID="ID_1100804556" MODIFIED="1734361583052" TEXT="Game Design">
 <font NAME="SansSerif" SIZE="12"/>
-<node CREATED="1353358176556" ID="ID_1038676588" MODIFIED="1734301138401" POSITION="left" TEXT="Authors/Resources">
+<node CREATED="1353358176556" ID="ID_1038676588" MODIFIED="1734361586799" POSITION="left" TEXT="Authors/Resources">
 <node CREATED="1394615172280" FOLDED="true" ID="ID_654320233" MODIFIED="1734206823021" TEXT="Lehman/Witty">
 <node CREATED="1394614906492" ID="ID_919236942" MODIFIED="1394614913275" TEXT="Harvey C. Lehman, Ph.D., Psychology, University of Chicago"/>
 <node CREATED="1394615136037" ID="ID_217462150" MODIFIED="1394615168385" TEXT="Paul Andrew Witty, Ph.D., Columbia University"/>
@@ -282,8 +282,8 @@
 <node CREATED="1427818733950" ID="ID_223030097" MODIFIED="1427818745468" TEXT="Stressbew&#xe4;ltigung in der Pr&#xe4;vention"/>
 </node>
 </node>
-<node CREATED="1379429389129" FOLDED="true" ID="ID_632465411" LINK="http://www.f01.fh-koeln.de/fakultaet/personen/emeriti/juergen.fritz/" MODIFIED="1734206823031" TEXT="J&#xfc;rgen Fritz (2004)">
-<node CREATED="1379429396507" FOLDED="true" ID="ID_959099814" MODIFIED="1734206823031" TEXT="Das Spiel verstehen">
+<node CREATED="1379429389129" FOLDED="true" ID="ID_632465411" LINK="http://www.f01.fh-koeln.de/fakultaet/personen/emeriti/juergen.fritz/" MODIFIED="1734361425023" TEXT="J&#xfc;rgen Fritz (2004)">
+<node CREATED="1379429396507" FOLDED="true" ID="ID_959099814" MODIFIED="1734358714573" TEXT="Das Spiel verstehen">
 <node CREATED="1386539369345" ID="ID_21014128" LINK="Diskurslandschaft.mm" MODIFIED="1396462041036" TEXT="Diskurslandschaft"/>
 <node CREATED="1379492513729" ID="ID_1811576505" LINK="Pics/Fritz/Spielbegriff.pdf" MODIFIED="1379492584779" TEXT="Spielbegriff"/>
 <node CREATED="1379429624957" FOLDED="true" ID="ID_1846394172" MODIFIED="1734206823030" TEXT="Dimensionen">
@@ -332,14 +332,14 @@
 <node CREATED="1379492588462" FOLDED="true" ID="ID_76096775" MODIFIED="1734206823030" TEXT="Reizkonfiguration">
 <node CREATED="1379493926718" ID="ID_174451062" LINK="Pics/Fritz/Reizkonfiguration.pdf" MODIFIED="1379493937356" TEXT="Schaubild"/>
 </node>
-<node CREATED="1379495853962" FOLDED="true" ID="ID_239018610" LINK="Pics/Fritz/OrientierungSpielkonstrukte.pdf" MODIFIED="1734206823030" TEXT="Orientierungsbereiche von Spielkonstrukten">
+<node CREATED="1379495853962" FOLDED="true" ID="ID_239018610" LINK="Pics/Fritz/OrientierungSpielkonstrukte.pdf" MODIFIED="1734361425023" TEXT="Orientierungsbereiche von Spielkonstrukten">
 <node CREATED="1379495877620" ID="ID_496595509" MODIFIED="1379504764191" TEXT="K&#xf6;rperbewegung"/>
 <node CREATED="1379495867236" ID="ID_1662041523" MODIFIED="1379495870712" TEXT="Symbol"/>
 <node CREATED="1379495871236" ID="ID_647596892" MODIFIED="1379495873966" TEXT="Regel"/>
 <node CREATED="1379495882447" ID="ID_751360406" MODIFIED="1379495887547" TEXT="Denkprozess"/>
 </node>
-<node CREATED="1385937212233" FOLDED="true" ID="ID_1836052657" MODIFIED="1734206823031" TEXT="Organisation der Spielwelt">
-<node CREATED="1385937727479" FOLDED="true" ID="ID_645008509" MODIFIED="1734206823030" TEXT="Soziale Entwicklung">
+<node CREATED="1385937212233" FOLDED="true" ID="ID_1836052657" MODIFIED="1734361425023" TEXT="Organisation der Spielwelt">
+<node CREATED="1385937727479" FOLDED="true" ID="ID_645008509" MODIFIED="1734361425023" TEXT="Soziale Entwicklung">
 <node CREATED="1385937247370" ID="ID_1134701653" MODIFIED="1385937268923" TEXT="bis 3 Jahre: Einzel- und Parallelspiel"/>
 <node CREATED="1385937270365" ID="ID_1852952411" MODIFIED="1385937447307" TEXT="3 - 5 Jahre: Assoziatives Spiel, Pseudo-Gruppen"/>
 <node CREATED="1385937448417" FOLDED="true" ID="ID_89957513" MODIFIED="1734206823030" TEXT="ab 5: Spielpaare und fl&#xfc;chtige Gruppe">
@@ -354,7 +354,7 @@
 <node CREATED="1385937656851" ID="ID_1257102983" MODIFIED="1385937700022" TEXT="gemeinsame Unternehmungen verleihen Best&#xe4;ndigkeit"/>
 </node>
 </node>
-<node CREATED="1385937741854" FOLDED="true" ID="ID_737198983" MODIFIED="1734206823031" TEXT="Rituale und Skripts">
+<node CREATED="1385937741854" FOLDED="true" ID="ID_737198983" MODIFIED="1734361425023" TEXT="Rituale und Skripts">
 <node CREATED="1385937789625" ID="ID_1553322202" MODIFIED="1385937801231" TEXT="Kern der Organisation: Erwartbarkeit"/>
 <node CREATED="1385937803022" ID="ID_1452582691" MODIFIED="1385937883160" TEXT="Rituale: Wiederholungen von Interaktionssequenzen"/>
 <node CREATED="1385937883942" ID="ID_1815524774" MODIFIED="1385937900588" TEXT="halten Spielprozess aufrecht"/>
@@ -363,12 +363,12 @@
 <node CREATED="1385937986169" ID="ID_253039871" MODIFIED="1385937997643" TEXT="Schon f&#xfc;r Kinder ab 3 Jahren m&#xf6;glich"/>
 <node CREATED="1385938056174" ID="ID_803123458" MODIFIED="1385938069383" TEXT="Inhaltliche Bestimmung ergibt &quot;Spielsinn&quot;"/>
 </node>
-<node CREATED="1385938872739" FOLDED="true" ID="ID_1049974457" MODIFIED="1734206823031" TEXT="Spielw&#xfc;nsche in der Gruppe aushandeln">
+<node CREATED="1385938872739" FOLDED="true" ID="ID_1049974457" MODIFIED="1734361425023" TEXT="Spielw&#xfc;nsche in der Gruppe aushandeln">
 <node CREATED="1385938910571" ID="ID_1053348699" MODIFIED="1385939023290" TEXT="Zuschauen -&gt; Nebenrollen -&gt; Integration"/>
 <node CREATED="1385939024132" ID="ID_1870320092" MODIFIED="1385939045825" TEXT="Bestimmt soziale Beziehungen unter den Kindern"/>
 <node CREATED="1385939047166" ID="ID_640049478" MODIFIED="1385939097540" TEXT="Abgrenzung gegen andere Gruppen"/>
 </node>
-<node CREATED="1385939116757" FOLDED="true" ID="ID_1745752507" MODIFIED="1734206823031" TEXT="Regeln definieren">
+<node CREATED="1385939116757" FOLDED="true" ID="ID_1745752507" MODIFIED="1734361425023" TEXT="Regeln definieren">
 <node CREATED="1385939138216" ID="ID_1228989526" MODIFIED="1385939159984" TEXT="bis 10 Jahre: gleicher Zeitaufwand wie f&#xfc;r Spielprozess"/>
 <node CREATED="1385939208291" ID="ID_1131763539" MODIFIED="1385939215108" TEXT="Begrenzungen erfahren"/>
 <node CREATED="1385939215419" ID="ID_1328854388" MODIFIED="1385939239843" TEXT="F&#xe4;higkeiten innerhalb der Grenzen entfalten"/>
@@ -378,7 +378,7 @@
 <node CREATED="1385939486857" ID="ID_185915599" MODIFIED="1385939501683" TEXT="In Gruppen entwickeln sich Lieblingsspiele"/>
 <node CREATED="1385939540091" ID="ID_667946879" MODIFIED="1385939587577" TEXT="diese Repr&#xe4;sentieren h&#xe4;ufig gemeinsame Lebensverh&#xe4;ltnisse und Ideen"/>
 </node>
-<node CREATED="1387663890934" FOLDED="true" ID="ID_30298649" LINK="Pics/Fritz/OrganisationSpielwelten.pdf" MODIFIED="1734206823031" STYLE="fork" TEXT="Steuerung des Spielprozesses">
+<node CREATED="1387663890934" FOLDED="true" ID="ID_30298649" LINK="Pics/Fritz/OrganisationSpielwelten.pdf" MODIFIED="1734361425023" STYLE="fork" TEXT="Steuerung des Spielprozesses">
 <node CREATED="1387664814396" ID="ID_127232878" MODIFIED="1387664977420" TEXT="Rahmungssignale bestimmen Interaktionsebene"/>
 <node CREATED="1387664978542" ID="ID_466503218" MODIFIED="1387665028131" TEXT="Spielebene, Regieebene, Konstruktebene"/>
 <node CREATED="1387665068689" ID="ID_187262825" MODIFIED="1387665087437" TEXT="Integration verschiedener Impulse der Mitspieler"/>
@@ -389,7 +389,7 @@
 </node>
 </node>
 <node CREATED="1353359743191" ID="ID_1584293980" MODIFIED="1394116798993" TEXT="Mihalyi Csikszentmihalyi"/>
-<node CREATED="1394124673419" FOLDED="true" ID="ID_787186642" MODIFIED="1734206823031" TEXT="Deci/Ryan (1993)">
+<node CREATED="1394124673419" FOLDED="true" ID="ID_787186642" MODIFIED="1734358720101" TEXT="Deci/Ryan (1993)">
 <node CREATED="1427831309418" ID="ID_1483290517" MODIFIED="1439901709113" STYLE="fork" TEXT="Selbstbestimmungstheorie der Motivation"/>
 <node CREATED="1394124822305" FOLDED="true" ID="ID_316519289" MODIFIED="1734206823031" TEXT="Annahme von drei psychologischen Grundbed&#xfc;rfnissen">
 <node CREATED="1394124903618" ID="ID_1586426889" MODIFIED="1394124906986" TEXT="Autonomie"/>
@@ -404,8 +404,8 @@
 <node CREATED="1428476291751" ID="ID_915295666" MODIFIED="1428476305436" TEXT="University of Rochester, NY"/>
 </node>
 </node>
-<node CREATED="1424421757942" FOLDED="true" ID="ID_1369001239" LINK="Profiles/Profiles.html#Juul" MODIFIED="1734301136835" TEXT="Jesper Juul">
-<node CREATED="1424421853376" FOLDED="true" ID="ID_665824906" LINK="http://www.half-real.net/" MODIFIED="1734301136835" TEXT="Half-Real (2005)">
+<node CREATED="1424421757942" FOLDED="true" ID="ID_1369001239" LINK="Profiles/Profiles.html#Juul" MODIFIED="1734358788152" TEXT="Jesper Juul">
+<node CREATED="1424421853376" FOLDED="true" ID="ID_665824906" LINK="http://www.half-real.net/" MODIFIED="1734358786546" TEXT="Half-Real (2005)">
 <node CREATED="1424422265310" FOLDED="true" ID="ID_1080996318" LINK="Pics/Juul/ClassicGameModel.png" MODIFIED="1734206823031" TEXT="Classical Game Model">
 <node CREATED="1424866939836" ID="ID_1700327256" MODIFIED="1424866948592" TEXT="a rule based formal system"/>
 <node CREATED="1424866950161" ID="ID_1512411233" MODIFIED="1424866965855" TEXT="with variable and quantifiable outcomes"/>
@@ -492,14 +492,14 @@
 </node>
 </node>
 </node>
-<node CREATED="1424866530559" FOLDED="true" ID="ID_540948344" MODIFIED="1734206823032" TEXT="Fiction">
+<node CREATED="1424866530559" FOLDED="true" ID="ID_540948344" MODIFIED="1734361425023" TEXT="Fiction">
 <node CREATED="1424866649538" ID="ID_1495376935" MODIFIED="1424866870584" TEXT="Player can coose to imagine at will..."/>
 <node CREATED="1424866783186" ID="ID_979953664" MODIFIED="1424866874235" TEXT="...especially in games of emergence"/>
 <node CREATED="1424447776700" ID="ID_1335362164" MODIFIED="1424447784355" TEXT="Coherent and incoherent worlds"/>
 <node CREATED="1425127314789" ID="ID_1058170889" MODIFIED="1425127367458" TEXT="fictional world is imagined by player"/>
 <node CREATED="1425127406854" ID="ID_1669254450" MODIFIED="1425127422699" TEXT="not to be confused with storytelling!"/>
 <node CREATED="1425127435289" ID="ID_1366120026" MODIFIED="1425127443433" TEXT="all fictional worlds are incomplete"/>
-<node CREATED="1425127368348" FOLDED="true" ID="ID_751746872" MODIFIED="1734206823032" TEXT="player fills in the gaps">
+<node CREATED="1425127368348" FOLDED="true" ID="ID_751746872" MODIFIED="1734361425023" TEXT="player fills in the gaps">
 <node CREATED="1425142598108" ID="ID_1255984448" MODIFIED="1425142613723" TEXT="with knowledge from the real or other fictional worlds"/>
 </node>
 <node CREATED="1424866609693" FOLDED="true" ID="ID_1116766730" MODIFIED="1734206823032" TEXT="often fictional worlds are contradictory and incoherent">
@@ -508,7 +508,7 @@
 <node CREATED="1425129252483" ID="ID_1210484708" MODIFIED="1425129265008" TEXT="no further explanation needed"/>
 <node CREATED="1425129234214" ID="ID_1972731656" MODIFIED="1425129244786" TEXT="(how about this in another medium?)"/>
 </node>
-<node CREATED="1425135938497" FOLDED="true" ID="ID_742005561" MODIFIED="1734206823032" TEXT="Ways to create worlds">
+<node CREATED="1425135938497" FOLDED="true" ID="ID_742005561" MODIFIED="1734361425023" TEXT="Ways to create worlds">
 <node CREATED="1425135949488" ID="ID_367421736" MODIFIED="1425135953964" TEXT="Graphics"/>
 <node CREATED="1425135960133" ID="ID_1467933924" MODIFIED="1425135961389" TEXT="Sound"/>
 <node CREATED="1425135962439" ID="ID_123674861" MODIFIED="1425135963900" TEXT="Text"/>
@@ -552,11 +552,11 @@
 <node CREATED="1425130604380" ID="ID_1194565793" MODIFIED="1425130620249" TEXT="game is played within a fictional world"/>
 </node>
 </node>
-<node CREATED="1425125338121" FOLDED="true" ID="ID_406448976" MODIFIED="1734206823032" TEXT="Challenge">
+<node CREATED="1425125338121" FOLDED="true" ID="ID_406448976" MODIFIED="1734361425038" TEXT="Challenge">
 <node CREATED="1425125342689" ID="ID_1946064373" MODIFIED="1425125353710" TEXT="Game should challenge in a consistent way"/>
 <node CREATED="1425125354196" ID="ID_1250770390" MODIFIED="1425125369391" TEXT="so players can improve in some distinct skills"/>
 </node>
-<node CREATED="1425140399553" FOLDED="true" ID="ID_1422912259" MODIFIED="1734206823032" TEXT="Fictional Time">
+<node CREATED="1425140399553" FOLDED="true" ID="ID_1422912259" MODIFIED="1734361425038" TEXT="Fictional Time">
 <node CREATED="1425140404374" ID="ID_1929697571" MODIFIED="1425140544466" TEXT="Play time is projected into the game world"/>
 <node CREATED="1425140417153" ID="ID_688640946" MODIFIED="1425140496469" TEXT="arbitrary speed and start"/>
 <node CREATED="1425140497104" ID="ID_1975176552" MODIFIED="1425140665340" TEXT="cut-scenes, menus, level changes etc disconnect play time from fictional time"/>
@@ -564,7 +564,7 @@
 <node CREATED="1425158349703" ID="ID_1995152891" LINK="Pics/Juul/RuleFiction_GamePlayerWorld.png" MODIFIED="1425158402751" TEXT="Game, Player, World"/>
 </node>
 </node>
-<node CREATED="1353358188756" FOLDED="true" ID="ID_716966207" LINK="Profiles/Profiles.html#Schell" MODIFIED="1734300681660" TEXT="Jesse Schell">
+<node CREATED="1353358188756" FOLDED="true" ID="ID_716966207" LINK="Profiles/Profiles.html#Schell" MODIFIED="1734361425038" TEXT="Jesse Schell">
 <node CREATED="1353358188756" ID="ID_1142868831" LINK="http://www.youtube.com/playlist?list=PLAsGNbdeKVDf74Gm2F5Jx7g3L83UcaE3E" MODIFIED="1388232389277" TEXT="Youtube Playlist"/>
 <node CREATED="1353340851312" FOLDED="true" ID="ID_337908066" MODIFIED="1734206823035" TEXT="What is a game?">
 <node CREATED="1353339322537" FOLDED="true" ID="ID_1365884136" MODIFIED="1734206823035" TEXT="10 Qualities">
@@ -720,7 +720,7 @@
 <node CREATED="1353341460994" ID="ID_1012216151" MODIFIED="1353341465166" TEXT="output devices"/>
 </node>
 </node>
-<node CREATED="1353341651700" FOLDED="true" ID="ID_1131424881" MODIFIED="1734206823036" TEXT="Experience">
+<node CREATED="1353341651700" FOLDED="true" ID="ID_1131424881" MODIFIED="1734358782675" TEXT="Experience">
 <node CREATED="1355148065596" FOLDED="true" ID="ID_1327602254" MODIFIED="1734206823035" TEXT="Four Principal Mental Abilities for GamePlay">
 <node CREATED="1355148103168" FOLDED="true" ID="ID_1560754519" MODIFIED="1734206823035" TEXT="Modeling">
 <node CREATED="1355148387449" ID="ID_495523397" MODIFIED="1355148392807" TEXT="Mental Models"/>
@@ -763,8 +763,8 @@
 <node CREATED="1394745678933" ID="ID_1771375688" MODIFIED="1394745680263" TEXT="don&#x2019;t people hate being judged? They don&#x2019;t &#x2014;  they only hate being judged unfairly"/>
 </node>
 </node>
-<node CREATED="1394616232982" FOLDED="true" ID="ID_1010315170" MODIFIED="1734206823036" TEXT="Eight Filters">
-<node CREATED="1394616239471" FOLDED="true" ID="ID_1144604633" MODIFIED="1734206823036" TEXT="1. Artistic Impulse">
+<node CREATED="1394616232982" FOLDED="true" ID="ID_1010315170" MODIFIED="1734358780171" TEXT="Eight Filters">
+<node CREATED="1394616239471" FOLDED="true" ID="ID_1144604633" MODIFIED="1734361425038" TEXT="1. Artistic Impulse">
 <node CREATED="1394616264236" ID="ID_1648803816" MODIFIED="1394616278935" TEXT="Does this game feel right?"/>
 </node>
 <node CREATED="1394616280687" FOLDED="true" ID="ID_781075931" MODIFIED="1734206823036" TEXT="2. Demographics">
@@ -789,42 +789,42 @@
 <node CREATED="1394616469594" ID="ID_1512761429" MODIFIED="1394616484261" TEXT="Do the playtesters enjoy the game enough?"/>
 </node>
 </node>
-<node CREATED="1394620111129" FOLDED="true" ID="ID_1760678451" MODIFIED="1734206823036" TEXT="Tipps for Prototyping">
-<node CREATED="1394620123973" FOLDED="true" ID="ID_454776011" MODIFIED="1734206823036" TEXT="1. Answer a Question">
+<node CREATED="1394620111129" FOLDED="true" ID="ID_1760678451" MODIFIED="1734361425038" TEXT="Tipps for Prototyping">
+<node CREATED="1394620123973" FOLDED="true" ID="ID_454776011" MODIFIED="1734361425038" TEXT="1. Answer a Question">
 <node CREATED="1394620138358" ID="ID_813508484" MODIFIED="1394620170870" TEXT="Define the questions the prototype is supposed to answer before starting"/>
 <node CREATED="1394620178890" ID="ID_490904862" MODIFIED="1394620195194" TEXT="focus only on answering these questions, don&apos;t overbuild"/>
 </node>
-<node CREATED="1394620198160" FOLDED="true" ID="ID_959220088" MODIFIED="1734206823036" TEXT="2. Forget Quality">
+<node CREATED="1394620198160" FOLDED="true" ID="ID_959220088" MODIFIED="1734361425038" TEXT="2. Forget Quality">
 <node CREATED="1394620284254" ID="ID_1916495972" MODIFIED="1394620312660" TEXT="Polishing make things worse"/>
 <node CREATED="1394620314054" ID="ID_1843829205" MODIFIED="1394620367868" TEXT="Waste of time and shift of testers focus"/>
 </node>
-<node CREATED="1394620380255" FOLDED="true" ID="ID_513073062" MODIFIED="1734206823036" TEXT="3. Don&apos;t Get Attached">
+<node CREATED="1394620380255" FOLDED="true" ID="ID_513073062" MODIFIED="1734361425038" TEXT="3. Don&apos;t Get Attached">
 <node CREATED="1394620420077" ID="ID_803629643" MODIFIED="1394620429903" TEXT="Build to throw it away"/>
 <node CREATED="1394620474260" ID="ID_669700579" MODIFIED="1394620491778" TEXT="Regard it as practise only"/>
 <node CREATED="1394620492323" ID="ID_1878833574" MODIFIED="1394620514769" TEXT="Extract bits and pieces for the next prototype"/>
 </node>
-<node CREATED="1394620525289" FOLDED="true" ID="ID_375027342" MODIFIED="1734206823036" TEXT="4. Prioritize Your Prototypes">
+<node CREATED="1394620525289" FOLDED="true" ID="ID_375027342" MODIFIED="1734361425038" TEXT="4. Prioritize Your Prototypes">
 <node CREATED="1394620556200" ID="ID_849629869" MODIFIED="1394620562932" TEXT="Face biggest risk first"/>
 <node CREATED="1394620579204" ID="ID_1431640748" MODIFIED="1394620589165" TEXT="consider dependence"/>
 <node CREATED="1394620593249" ID="ID_1219449123" MODIFIED="1394620642553" TEXT="results of one prototype may make other prototypes meaningless"/>
 </node>
-<node CREATED="1394620664136" FOLDED="true" ID="ID_470967197" MODIFIED="1734206823036" TEXT="5. Parallelize Prototypes">
+<node CREATED="1394620664136" FOLDED="true" ID="ID_470967197" MODIFIED="1734361425038" TEXT="5. Parallelize Prototypes">
 <node CREATED="1394620676132" ID="ID_1656714281" MODIFIED="1394620727544" TEXT="try to create multiple small, independend prototypes at the same time"/>
 <node CREATED="1394620728098" ID="ID_804113190" MODIFIED="1394620785348" TEXT="engineers -&gt; technology, artists -&gt; scribbles/modells, gamedesigner -&gt; gameplay prototypes"/>
 </node>
-<node CREATED="1394620797998" FOLDED="true" ID="ID_521560309" MODIFIED="1734206823036" TEXT="6. It Doesn&apos;t Have to be Digital">
+<node CREATED="1394620797998" FOLDED="true" ID="ID_521560309" MODIFIED="1734361425038" TEXT="6. It Doesn&apos;t Have to be Digital">
 <node CREATED="1394621302611" ID="ID_1557450371" MODIFIED="1394622187333" TEXT="Paper prototypes"/>
 <node CREATED="1394622188278" ID="ID_1460097474" MODIFIED="1394622205843" TEXT="easy when sequential (turn based)"/>
 <node CREATED="1394622206596" ID="ID_646379004" MODIFIED="1394622241728" TEXT="use metronome to produce ticks when simultaneous"/>
 <node CREATED="1394622244498" ID="ID_958030077" MODIFIED="1394622314332" TEXT="group effort, define roles for participants"/>
 <node CREATED="1394622346270" ID="ID_1734912029" MODIFIED="1394622422946" TEXT="(JDO) use office calc to produce random values on Strg+Shift+F9"/>
 </node>
-<node CREATED="1394622502425" FOLDED="true" ID="ID_523778549" MODIFIED="1734206823036" TEXT="7. Pick a &quot;Fast Loop&quot; Game Engine">
+<node CREATED="1394622502425" FOLDED="true" ID="ID_523778549" MODIFIED="1734361425038" TEXT="7. Pick a &quot;Fast Loop&quot; Game Engine">
 <node CREATED="1394622517870" ID="ID_1706958317" MODIFIED="1394622525188" TEXT="for digital prototyping"/>
 <node CREATED="1394622527422" ID="ID_959500136" MODIFIED="1394622546470" TEXT="late-binding language, interpreter"/>
 <node CREATED="1394622547087" ID="ID_1471392439" MODIFIED="1394622572098" TEXT="change code while running"/>
 </node>
-<node CREATED="1394622574254" FOLDED="true" ID="ID_1554218349" MODIFIED="1734206823036" TEXT="8. Build the Toy First">
+<node CREATED="1394622574254" FOLDED="true" ID="ID_1554218349" MODIFIED="1734361425038" TEXT="8. Build the Toy First">
 <node CREATED="1394622649230" ID="ID_407776343" MODIFIED="1394622663490" TEXT="Make sure your toy is fun before you build a game around it"/>
 <node CREATED="1394622882093" ID="ID_1959320181" MODIFIED="1394622944230" TEXT="David Jones: Lemmings and GTA where build around the little creatures respectively the city as a toy"/>
 <node CREATED="1394622969091" ID="ID_388987862" MODIFIED="1394623032547" TEXT="The Toy supports the game and vice versa"/>
@@ -994,7 +994,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1398062503678" FOLDED="true" ID="ID_479734164" LINK="Profiles/Profiles.html#Adams" MODIFIED="1734209521890" TEXT="Ernest Adams">
+<node CREATED="1398062503678" FOLDED="true" ID="ID_479734164" LINK="Profiles/Profiles.html#Adams" MODIFIED="1734358797702" TEXT="Ernest Adams">
 <node CREATED="1429425394279" FOLDED="true" ID="ID_1429029771" MODIFIED="1734206823038" TEXT="Genres">
 <node CREATED="1429425415380" FOLDED="true" ID="ID_1882053245" MODIFIED="1734206823037" TEXT="Action">
 <node CREATED="1429425430213" ID="ID_1399176626" MODIFIED="1429693666981" TEXT="Majority of challenges test players physical skills and coordination"/>
@@ -1230,7 +1230,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1398115314526" FOLDED="true" ID="ID_389562020" LINK="Profiles/Profiles.html#Aarseth" MODIFIED="1734301136839" TEXT="Espen Aarseth">
+<node CREATED="1398115314526" FOLDED="true" ID="ID_389562020" LINK="Profiles/Profiles.html#Aarseth" MODIFIED="1734358802837" TEXT="Espen Aarseth">
 <node CREATED="1398115471858" ID="ID_360621180" MODIFIED="1398115473304" TEXT="Editor in Chief of Game Studies"/>
 <node CREATED="1399113154976" ID="ID_1358541162" MODIFIED="1399113186590" TEXT="Development of an open ended typology"/>
 <node CREATED="1398115539766" FOLDED="true" ID="ID_1022703812" MODIFIED="1734206823039" STYLE="fork" TEXT="Multi-Dimensional Topology of Games (2003 with  Smedstad, Sunnana)">
@@ -1956,7 +1956,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1427229889231" HGAP="68" ID="ID_1836134591" MODIFIED="1734301140286" POSITION="right" TEXT="Themen" VSHIFT="-1">
+<node CREATED="1427229889231" HGAP="68" ID="ID_1836134591" MODIFIED="1734361588667" POSITION="right" TEXT="Themen" VSHIFT="-1">
 <node CREATED="1396077485557" FOLDED="true" ID="ID_29826653" MODIFIED="1734206823048" TEXT="1. Introduction">
 <node CREATED="1396077490398" ID="ID_1443478807" MODIFIED="1439902231501" TEXT="Nur kurz Kurs vorstellen"/>
 <node CREATED="1396077499525" ID="ID_1049754650" MODIFIED="1439900086408" STYLE="fork" TEXT="Viel Zeit f&#xfc;r Werw&#xf6;lfe"/>
@@ -2444,30 +2444,29 @@
 <node CREATED="1440265351114" ID="ID_863215898" MODIFIED="1440265352996" TEXT="Pathfinding (Thesis Rudolf) "/>
 <node CREATED="1440317858382" ID="ID_1939081108" MODIFIED="1440317913248" TEXT="Aufgabe: Strategien und optimales Verhalten von Spielern und Agenten ermitteln"/>
 </node>
-<node CREATED="1440265767221" FOLDED="true" ID="ID_1950423517" LINK="#ID_1865365137" MODIFIED="1734206823060" TEXT="14. Development Process">
-<node CREATED="1394615700970" FOLDED="true" ID="ID_1769103376" MODIFIED="1734206823060" TEXT="Development Process">
+<node CREATED="1440265767221" FOLDED="true" ID="ID_1950423517" MODIFIED="1734361583052" TEXT="14. Development Process">
+<node CREATED="1394615700970" FOLDED="true" ID="ID_1769103376" MODIFIED="1734361438863" TEXT="Development Process">
 <node CREATED="1394617749713" ID="ID_1525843587" LINK="Pics/Schell/Waterfall.jpg" MODIFIED="1394617781855" TEXT="Waterfall (adopted to Softwaredesign in the 1970s)"/>
 <node CREATED="1394616744717" ID="ID_1621174103" LINK="Pics/Schell/BarryBoehm.jpg" MODIFIED="1394617632323" TEXT="Barry Boehm (1986)"/>
 <node CREATED="1394616589370" ID="ID_286743818" LINK="#ID_1010315170" MODIFIED="1394617783141" TEXT="Eight Filters"/>
 </node>
-<node CREATED="1440333995501" FOLDED="true" ID="ID_1292339448" MODIFIED="1734206823060" TEXT="Find an idea or theme">
-<node CREATED="1440334043051" ID="ID_195458163" MODIFIED="1440334046215" TEXT="Brainstorm"/>
-<node CREATED="1440334046841" ID="ID_609047652" MODIFIED="1440334058711" TEXT="Create small concept"/>
-<node CREATED="1440334203595" ID="ID_1188472693" MODIFIED="1440334211373" TEXT="Visualize!"/>
-</node>
-<node CREATED="1440334131490" ID="ID_1019880487" MODIFIED="1440334149549" TEXT="Build the toy first"/>
-<node CREATED="1440333356972" FOLDED="true" ID="ID_1138298886" MODIFIED="1734206823060" TEXT="Prototype">
-<node CREATED="1440333362993" ID="ID_1327479450" MODIFIED="1440333366817" TEXT="Paper"/>
+<node CREATED="1734361460126" ID="ID_1732502236" MODIFIED="1734361460126" TEXT="Find a theme that resonates with the target audience."/>
+<node CREATED="1734361460126" ID="ID_1032442336" MODIFIED="1734361503374" TEXT="Create visualizations such as moodboards, packshots, posters to convey the theme to the team and or &quot;soundboards&quot;"/>
+<node CREATED="1734361460126" ID="ID_1367052693" MODIFIED="1734361460126" TEXT="Create physical prototypes to define fundamental game mechanics with the team."/>
+<node CREATED="1734361460126" ID="ID_516893510" MODIFIED="1734361460126" TEXT="Going digital, create &quot;the toy&quot; first to get a feel for it."/>
+<node CREATED="1734361460126" FOLDED="true" ID="ID_1260459411" MODIFIED="1734361583030" TEXT="Create multiple digital prototypes and make sure, they are considered garbage.">
 <node CREATED="1440333367787" ID="ID_274222213" MODIFIED="1440333371808" TEXT="Spreadsheet"/>
 <node CREATED="1440333377837" ID="ID_1459330054" MODIFIED="1440333396996" TEXT="Prototyping Tools"/>
 </node>
-<node CREATED="1440334228411" FOLDED="true" ID="ID_1407636896" MODIFIED="1734206823060" TEXT="Record Minutes!">
+<node CREATED="1734361460126" FOLDED="true" ID="ID_1958300905" MODIFIED="1734361583030" TEXT="In the end, make sure you have created a well formatted game design document from the minutes you have recorded throughout the process.">
+<node CREATED="1440334228411" FOLDED="true" ID="ID_1407636896" MODIFIED="1734361583030" TEXT="Record Minutes!">
 <node CREATED="1440334801230" ID="ID_20884614" MODIFIED="1440334817199" TEXT="No ideas should be forgotten"/>
 <node CREATED="1440334818058" ID="ID_1253869596" MODIFIED="1440334837579" TEXT="No discussion should happen twice"/>
 <node CREATED="1440334850566" ID="ID_232100901" MODIFIED="1440334897958" TEXT="Record decisions and reasons"/>
 <node CREATED="1440334898604" ID="ID_874498740" MODIFIED="1440334920370" TEXT="Record discarded alternatives"/>
 </node>
-<node CREATED="1440265779494" ID="ID_177681655" MODIFIED="1440334797873" TEXT="Create and maintain Game Design Document"/>
+</node>
+<node CREATED="1440265779494" ID="ID_177681655" MODIFIED="1734361571856" TEXT="Maintain the Game Design Document"/>
 </node>
 <node CREATED="1394020440514" FOLDED="true" ID="ID_1837627524" MODIFIED="1734206823060" TEXT="Links">
 <node CREATED="1394020461882" ID="ID_321856432" LINK="http://www.paidia.de/" MODIFIED="1394020468625" TEXT="Paidia.de"/>
