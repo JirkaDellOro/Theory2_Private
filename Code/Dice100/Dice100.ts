@@ -26,27 +26,24 @@ async function simulate(): Promise<void> {
   score = [0, 0]
   active = 0
   potential = 0
-  
+
   do {
-    let go: boolean = strategy[active](score, active, potential)
+    let go: boolean = strategy[active](score.slice(), active, potential)
     if (go) {
       let roll: number = 1 + Math.floor(Math.random() * 6)
       if (roll > 1)
         potential += roll
       else
-        togglePlayer()
+        if (togglePlayer())
+          break;
     } else {
       score[active] += potential
-      if (active == 1 && (score[active] >= 100 || score[1 - active] >= 100))
-        break
-      togglePlayer()
+      if (togglePlayer())
+        break;
     }
   } while (true)
 
-  togglePlayer()
-  if (score[active] < score[1 - active])
-    togglePlayer()
-  console.log(`Player ${active} won with ${score[active]} points`)
+  console.log(`Player ${score[active] < score[1 - active] ? 1 - active : active} won with ${score[active]} points`)
 }
 
 function strategy10(_score: number[], _active: number, _potential: number): boolean {
@@ -54,10 +51,14 @@ function strategy10(_score: number[], _active: number, _potential: number): bool
   return go
 }
 
-function togglePlayer() {
+function togglePlayer(): boolean {
   console.log(score[0], score[1], potential)
   potential = 0
+  if (active == 1 && (score[active] >= 100 || score[1 - active] >= 100))
+    return true;
+
   active = 1 - active
+  return false;
 }
 
 async function loadScript(_url: RequestInfo): Promise<void> {

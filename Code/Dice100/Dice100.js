@@ -23,25 +23,21 @@ async function simulate() {
     active = 0;
     potential = 0;
     do {
-        let go = strategy[active](score, active, potential);
+        let go = strategy[active](score.slice(), active, potential);
         if (go) {
             let roll = 1 + Math.floor(Math.random() * 6);
             if (roll > 1)
                 potential += roll;
-            else
-                togglePlayer();
+            else if (togglePlayer())
+                break;
         }
         else {
             score[active] += potential;
-            if (active == 1 && (score[active] >= 100 || score[1 - active] >= 100))
+            if (togglePlayer())
                 break;
-            togglePlayer();
         }
     } while (true);
-    togglePlayer();
-    if (score[active] < score[1 - active])
-        togglePlayer();
-    console.log(`Player ${active} won with ${score[active]} points`);
+    console.log(`Player ${score[active] < score[1 - active] ? 1 - active : active} won with ${score[active]} points`);
 }
 function strategy10(_score, _active, _potential) {
     let go = _potential < 50;
@@ -50,7 +46,10 @@ function strategy10(_score, _active, _potential) {
 function togglePlayer() {
     console.log(score[0], score[1], potential);
     potential = 0;
+    if (active == 1 && (score[active] >= 100 || score[1 - active] >= 100))
+        return true;
     active = 1 - active;
+    return false;
 }
 async function loadScript(_url) {
     let script = document.createElement("script");
