@@ -12,6 +12,7 @@ async function getAgents(): Promise<void> {
 
   await Agent.createDialog(2, ["strategy"])
   strategy[0] = Agent.get(0).strategy
+  strategy[1] = Agent.get(1).strategy
 }
 
 async function start(): Promise<void> {
